@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState,useEffect } from 'react'
 import { Link,useNavigate,json } from 'react-router-dom'
-import '../App.css'
+import '../components/css/Login.css'
 
 const Login=()=>{
     const navigate=useNavigate(); 
@@ -12,6 +12,7 @@ const Login=()=>{
         if(auth){
             navigate('/Home')
         }
+        
     }) 
 
     const fetchingfun=async()=>{
@@ -26,6 +27,10 @@ const Login=()=>{
              if(fetching.name){   //check name property exist or not .it will asssure that user has sucessfully login
              localStorage.setItem("local",JSON.stringify(fetching))
              navigate('/Home')
+             
+                }
+                else {
+                    alert("Username or Password wrong")
                 }}
         catch{
             console.log(Error)   }

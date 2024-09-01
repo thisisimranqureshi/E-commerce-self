@@ -1,0 +1,49 @@
+#Single-main-div {
+    margin-top: 100px;
+    width: auto;
+    display: flex;
+    align-items: flex-start; /* Align items at the top */
+}
+
+#single-image-div {
+    height: 500px;
+    width: 500px;
+    display: inline-block;
+}
+#single-image-div img {
+    height: 400px;
+    width: 400px;
+    background-size: cover;
+}
+
+#single-text-div {
+    height: auto;
+    display: inline-block;
+    margin-top: 50px;
+    padding: 10px; /* Add padding to ensure text is not flush against the border */
+    background-color: white; /* Optional: Add background color for readability */
+    margin-left: 20px; 
+}
+#single-title{
+
+    margin-bottom: 10px;
+}
+#single-description{
+    margin-bottom: 10px;
+}
+#single-detail{
+ 
+    margin-bottom: 10px;
+}
+
+#single-price{
+    height: 40px;
+    width: 100px;
+    background-color: brown;
+    color :white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    
+}

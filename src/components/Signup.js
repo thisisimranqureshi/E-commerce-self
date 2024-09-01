@@ -1,4 +1,4 @@
-import '../App.css';
+import '../components/css/Signup.css';
 import { useState,useEffect } from 'react';
 import { Navigate,json, useNavigate,Link, } from 'react-router-dom';
 import background from '../images/background.jpg'
@@ -49,7 +49,7 @@ function Signup() {
   return (
     <div> 
     <div id='signup-image-div' >
-      <div id='main-div'> 
+      <div id='signup-main-div'> 
       <div id='register-form'>   <h1>Registration form</h1>   </div>
       <div id='name-input'> 
         <input onChange={nametexting} type='text' placeholder='Enter Your Name'/></div>

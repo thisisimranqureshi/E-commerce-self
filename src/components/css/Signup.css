@@ -1,0 +1,134 @@
+#signup-image-div{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../../images/background.jpg");
+  }
+   
+    
+  
+      
+    
+  #signup-main-div{                                     /*signup*/
+    border-radius: 20px;
+    margin-top: 50px;
+    background-color: white;
+    display: inline-block;
+    height: 400px;
+    width: 300px;
+    margin-left: 450px;
+    box-shadow: 
+    8px 8px 8px rgba(255, 255, 255, 0.3), /* Base shadow */
+    0 0 25px rgba(255, 255, 255, 0.6); /* Shiny effect */
+  
+  }
+  #register-form{                                     /*signup*/
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    justify-content:center ;
+    color:white;
+    background-color: #6a040f;
+  }
+  #register-form h1{                                      /*signup*/
+    display: inline;
+    background-color: #6a040f;
+    color: white;
+  }
+  #name-input {                                           /*signup*/
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    color :rgb(16, 15, 15);
+  }
+  #name-input input{                                       /*signup*/
+    padding-left: 3px;
+    height: 30px;
+    width: 200px;
+    border: black solid 2px;
+    margin-top: 40px;
+    background-color: white;
+  
+    font-size: 15px;
+  }
+  #email-input{                                              /*signup*/
+    background-color: white;
+    display: flex;
+    justify-content: center;
+  }
+  #email-input input{                                       /*signup*/
+    background-color: white;
+    padding-left: 3px;
+    height: 30px;
+    width: 200px;
+    border: black solid 2px;
+  
+    margin-top: 40px;
+    font-size: 15px;
+  }
+  #password-input{                                           /*signup*/
+    background-color: white;
+    display: flex;
+    justify-content: center;
+  }
+  #password-input input{                                   /*signup*/
+    background-color: white;
+   
+    padding-left: 3px;
+    height: 30px;
+    width: 200px;
+    border: black solid 2px;
+    margin-top: 40px;
+    font-size: 15px;
+  }
+  #password-input input:hover{                             /*signup*/
+    border-radius: 2px;
+  }
+  
+  #button-register{                                          /*signup*/
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    text-decoration: solid;
+  
+  }
+  
+  #button-register button{                                  /*signup*/
+    background-color: #6a040f;
+    margin-top: 40px;
+    color:white;
+    font-weight: 200;
+    font-size: large;
+    height: 30px;
+    width: 150px;
+    width: 100px;
+    border: solid #6a040f 3px;
+    border-radius: 20px;
+  
+    
+  }
+  
+  #button-register button:hover{                             /*signup*/
+    border: 4px;
+    box-shadow: 3px 3px 2px black,
+    0px 0px 8px black;
+  }
+  #signup-login{                                             /*signup*/
+    background-color: white;
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: end;
+    
+    
+  }
+  #signup-login p{                                            /*signup*/
+    background-color: white;
+    color: black;
+    display: inline-block;
+    font-size: 10px;
+  }
+  #signup-login a{                                             /*signup*/
+    background-color: white;
+    color: black;
+    display: inline-block;
+  }

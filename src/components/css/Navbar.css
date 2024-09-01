@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    background-color: #6a040f;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    z-index: 1;
+   
+    
+    position: fixed;
+    height: 70px;
+    
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+    position: relative;
+    left: 730px;
+    
+}
+.active{
+    box-shadow: 2px 2px 2px white,
+    2px 2px 2px white;
+
+    
+    
+}
+nav ul li{
+    display: flex;
+    margin-left: 40px;
+    color: white;
+}
+
+nav ul li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    color :white;
+    text-decoration: none;
+    background-color:#6a040f ;
+    height: 30px;
+    width: 60px;    }
+
+    nav ul li a:hover{
+        background-color: #89343d;
+
+    }
+nav span b{
+    color: white;
+    font-size: 40px;
+    }
+
+ nav span{
+    color: white;
+   position: relative;
+   left: 50px; 
+}
+
+#search-bar{
+    width: 450px;
+    height: 45px;
+
+    position: relative;
+    right: 292px;
+}
+#search-bar input{
+    width: 80%;
+    height: 100%;
+    display: inline-block;
+    border: none;
+    font-size: 17px;
+    padding-left: 7px;
+    border-radius: 10px;
+    border-top-right-radius: 0%;
+    border-bottom-right-radius: 0%;
+}
+#search-bar input:focus {
+    outline: none; /* Removes the default focus outline */
+    box-shadow: none; /* Removes any box-shadow applied on focus */
+}
+
+#search-bar button{
+    width: 20%;
+    height: 100%;
+    display: inline-block;
+    background-color: #89343d;
+    border: none;
+    color:white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    border-top-left-radius: 0%;
+    border-bottom-left-radius: 0%;
+}
+
+  #categories{
+    position: relative;
+    top: 70px;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    background-color: #a77a7e;
+ }
+ #categories ul{
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+ }
+
+ #categories ul li{
+    list-style: none;
+    display: inline-block;
+    font-weight: bold;
+    color: white;}
+    
+    #categories ul li a{
+        text-decoration: none;
+        color:white;
+    }

@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+}
+
+#home-main-div {
+    padding: 20px;
+}
+
+#row {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow containers to wrap onto new lines */
+    gap: 20px;
+    /* Add space between containers */
+    justify-content: center;
+    /* Center containers horizontally */
+}
+
+#container {
+    flex: 1 1 calc(25% - 20px);
+    /* Four containers per row, with space for gaps */
+    width: 250px;
+    /* Ensure containers do not exceed 25% of row width */
+    height: 300px;
+
+    display: flex;
+    flex-direction: column;
+    /* Stack image and text vertically */
+    margin-top: 70px;
+    /* Margin top */
+}
+
+
+#image {
+    width: 250px;
+    /* Full width of the container */
+    height: 200px;
+    /* Fixed height */
+
+    /* Ensure image covers the div */
+
+}
+
+#image img {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    cursor: pointer;
+}
+
+#text {
+    background-color: white;
+    width: 250px;
+    /* Full width of the container */
+    height: 100px;
+    /* Fixed height */
+    color: black;
+    overflow: hidden;
+
+    border: 1px solid black;
+    border-top: 0px;
+    cursor: pointer;
+
+    text-align: center;
+}
+
+#price {
+    background-color: brown;
+    color: white;
+    height: 30px;
+    width: 60px;
+    font-weight: bold;
+ position: relative;
+ bottom: 10px;
+    text-align: center;
+    right: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#cart {
+    background-color: blue;
+    color: white;
+    height: 30px;
+    width: 110px;
+    font-weight: bold;
+    cursor: pointer;
+
+    position: relative;
+    bottom: 10px;
+    left: 10px;
+text-align: center;
+border-radius: 10px;
+}

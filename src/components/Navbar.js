@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import '../components/css/Navbar.css';
 import { items } from "./data";
 
 const Navbar = ({ setData }) => {
+
+    const [searchitem,setSearchitem]=useState('');
     const navigate = useNavigate();
     const auth = localStorage.getItem("local");
 
@@ -27,6 +29,9 @@ const Navbar = ({ setData }) => {
     if (!auth) {
         return null; 
     }
+    const handlesearch=()=>{
+        navigate(`/search/${searchitem}`);
+    }
 
     return (
         <div>
@@ -39,8 +44,11 @@ const Navbar = ({ setData }) => {
                     <li><NavLink onClick={handleLogout} to='/Login'>Logout</NavLink></li>
                 </ul>
                 <div id="search-bar">
-                    <input placeholder="Search" />
-                    <button>Search</button>
+                    <input  onChange={(e)=>{
+                        setSearchitem(e.target.value);
+                    }}  
+                    placeholder="Search" />
+                    <button onClick={handlesearch}>Search</button>
                 </div>
             </nav>
 

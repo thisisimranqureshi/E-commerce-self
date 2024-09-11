@@ -1,110 +1,231 @@
 export const items=[
     {
         id:  1,
-        Title:"Jeans 1",
+        Title:"shoes 1",
+        category:"shoes",
         description:'Gucci Jeans Pant suitable price | 1',
         detail:"Made from 100% high-quality cotton denim, these pants are soft to the touch and durable enough for everyday wear. The fabric is pre-washed to provide  a comfortable, lived-in feel from day one Featuring a timeless cut that flatters all body types, our jeans offer a straight-leg silhouette with a mid-rise waist. This classic fit ensures a comfortable and stylish look without compromising on freedom of movement.." ,
         imgsrc:"pant1.jpg",
-        price:100
+        price:100,
+        reviews:39,
+        stars:4,
+        
 
     },
     {
         id:  2,
-        Title:"Jeans 2",
+        Title:"Shoes 2",
+        category:"shoes",
         description:'Gucci Jeans Pant suitable price | 2',
         detail:"Made from 100% high-quality cotton denim, these pants are soft to the touch and durable enough for everyday wear. The fabric is pre-washed to provide  a comfortable, lived-in feel from day one Featuring a timeless cut that flatters all body types, our jeans offer a straight-leg silhouette with a mid-rise waist. This classic fit ensures a comfortable and stylish look without compromising on freedom of movement.." ,
         imgsrc:"pant2.jpg",
-        price:200
+        price:200,
+        reviews:39,
+        stars:4,
 
     },
     {
         id:  3,
-        Title:"Jeans 3",
+        Title:"Jeans 1",
+        category:"pants",
         description:'Gucci Jeans Pant suitable price | 3',
         detail:"Made from 100% high-quality cotton denim, these pants are soft to the touch and durable enough for everyday wear. The fabric is pre-washed to provide  a comfortable, lived-in feel from day one Featuring a timeless cut that flatters all body types, our jeans offer a straight-leg silhouette with a mid-rise waist. This classic fit ensures a comfortable and stylish look without compromising on freedom of movement.." ,
         imgsrc:"pant3.jpg",
-        price:300
+        price:300,
+        reviews:32,
+        stars:3.5,
 
     },
     {
         id:  4,
-        Title:"Jeans 4",
+        Title:"Shirt 1",
+        category:"shirts",
         description:'Gucci Jeans Pant suitable price | 4',
         detail:"Made from 100% high-quality cotton denim, these pants are soft to the touch and durable enough for everyday wear. The fabric is pre-washed to provide  a comfortable, lived-in feel from day one Featuring a timeless cut that flatters all body types, our jeans offer a straight-leg silhouette with a mid-rise waist. This classic fit ensures a comfortable and stylish look without compromising on freedom of movement.." ,
         imgsrc:"pant4.jpg",
-        price:400
+        price:400,
+        reviews:28,
+        stars:2.7,
 
     },
     {
         id:  5,
-        Title:"Jeans 5",
+        Title:"Shirt 2",
+        category:"shirts",
         description:'Gucci Jeans Pant suitable price | 5',
         detail:"Made from 100% high-quality cotton denim, these pants are soft to the touch and durable enough for everyday wear. The fabric is pre-washed to provide  a comfortable, lived-in feel from day one Featuring a timeless cut that flatters all body types, our jeans offer a straight-leg silhouette with a mid-rise waist. This classic fit ensures a comfortable and stylish look without compromising on freedom of movement.." ,
         imgsrc:"pant5.jpg",
-        price:500
+        price:500,
+        reviews:39,
+        stars:4,
 
     },
     {
         id:  6,
-        Title:"Jeans 6",
+        Title:"Shoes 3",
+        category:"shoes",
         description:'Gucci Jeans Pant suitable price | 6',
         detail:"Made from 100% high-quality cotton denim, these pants are soft to the touch and durable enough for everyday wear. The fabric is pre-washed to provide  a comfortable, lived-in feel from day one Featuring a timeless cut that flatters all body types, our jeans offer a straight-leg silhouette with a mid-rise waist. This classic fit ensures a comfortable and stylish look without compromising on freedom of movement.." ,
         imgsrc:"pant6.jpg",
-        price:600
+        price:600,
+        reviews:19,
+        stars:1.9,
 
     },
     {
         id:  7,
-        Title:"Jeans 7",
+        Title:"Shoes 4",
+        category:"shoes",
         description:'Gucci Jeans Pant suitable price | 7',
         detail:"Made from 100% high-quality cotton denim, these pants are soft to the touch and durable enough for everyday wear. The fabric is pre-washed to provide  a comfortable, lived-in feel from day one Featuring a timeless cut that flatters all body types, our jeans offer a straight-leg silhouette with a mid-rise waist. This classic fit ensures a comfortable and stylish look without compromising on freedom of movement.." ,
         imgsrc:"pant7.jpg",
-        price:700
+        price:700,
+        reviews:39,
+        stars:3.9,
 
     },
     {
         id:  8,
-        Title:"Jeans 8",
+        Title:"Shirt 3",
+        category:"shirts",
         description:'Gucci Jeans Pant suitable price | 8',
         detail:"Made from 100% high-quality cotton denim, these pants are soft to the touch and durable enough for everyday wear. The fabric is pre-washed to provide  a comfortable, lived-in feel from day one Featuring a timeless cut that flatters all body types, our jeans offer a straight-leg silhouette with a mid-rise waist. This classic fit ensures a comfortable and stylish look without compromising on freedom of movement.." ,
         imgsrc:"pant8.jpg",
-        price:800
+        price:800,
+        reviews:9,
+        stars:4.9,
 
     },
     {
         id:  9,
-        Title:"Jeans 9",
+        Title:"Shoes 5",
+        category:"shoes",
         description:'Gucci Jeans Pant suitable price | 9',
         detail:"Made from 100% high-quality cotton denim, these pants are soft to the touch and durable enough for everyday wear. The fabric is pre-washed to provide  a comfortable, lived-in feel from day one Featuring a timeless cut that flatters all body types, our jeans offer a straight-leg silhouette with a mid-rise waist. This classic fit ensures a comfortable and stylish look without compromising on freedom of movement.." ,
         imgsrc:"pant9.jpg",
-        price:900
+        price:900,
+        reviews:1,
+        stars:5,
 
     },
     {
         id:  10,
-        Title:"Jeans 10",
+        Title:"Jeans 2",
+        category:"pants",
         description:'Gucci Jeans Pant suitable price | 10',
         detail:"Made from 100% high-quality cotton denim, these pants are soft to the touch and durable enough for everyday wear. The fabric is pre-washed to provide  a comfortable, lived-in feel from day one Featuring a timeless cut that flatters all body types, our jeans offer a straight-leg silhouette with a mid-rise waist. This classic fit ensures a comfortable and stylish look without compromising on freedom of movement.." ,
         imgsrc:"pant10.jpg",
-        price:1000
+        price:1000,
+        reviews:39,
+        stars:5,
 
     },
     {
         id:  11,
-        Title:"Jeans 11",
+        Title:"Shirt 4",
+        category:"shirts",
         description:'Gucci Jeans Pant suitable price | 11',
         detail:"Made from 100% high-quality cotton denim, these pants are soft to the touch and durable enough for everyday wear. The fabric is pre-washed to provide  a comfortable, lived-in feel from day one Featuring a timeless cut that flatters all body types, our jeans offer a straight-leg silhouette with a mid-rise waist. This classic fit ensures a comfortable and stylish look without compromising on freedom of movement.." ,
         imgsrc:"pant11.jpg",
-        price:1100
+        price:1100,
+        reviews:39,
+        stars:4.3,
 
     },
     {
         id:  12,
-        Title:"Jeans 12",
+        Title:"Shirt 5",
+        category:"shirts",
         description:'Gucci Jeans Pant suitable price | 12',
         detail:"Made from 100% high-quality cotton denim, these pants are soft to the touch and durable enough for everyday wear. The fabric is pre-washed to provide  a comfortable, lived-in feel from day one Featuring a timeless cut that flatters all body types, our jeans offer a straight-leg silhouette with a mid-rise waist. This classic fit ensures a comfortable and stylish look without compromising on freedom of movement.." ,
         imgsrc:"pant12.jpg",
-        price:1200
+        price:1200,
+        reviews:39,
+        stars:2.8,
+
+    },
+    {
+        id:  13,
+        Title:"mobile 1",
+        category:"mobiles",
+        description:'Gucci Jeans Pant suitable price | 8',
+        detail:"Made from 100% high-quality cotton denim, these pants are soft to the touch and durable enough for everyday wear. The fabric is pre-washed to provide  a comfortable, lived-in feel from day one Featuring a timeless cut that flatters all body types, our jeans offer a straight-leg silhouette with a mid-rise waist. This classic fit ensures a comfortable and stylish look without compromising on freedom of movement.." ,
+        imgsrc:"mobile1.jpg",
+        price:800,
+        reviews:9,
+        stars:4.9,
+
+    },
+    {
+        id:  14,
+        Title:"Mobile 2",
+        category:"mobiles",
+        description:'Gucci Jeans Pant suitable price | 8',
+        detail:"Made from 100% high-quality cotton denim, these pants are soft to the touch and durable enough for everyday wear. The fabric is pre-washed to provide  a comfortable, lived-in feel from day one Featuring a timeless cut that flatters all body types, our jeans offer a straight-leg silhouette with a mid-rise waist. This classic fit ensures a comfortable and stylish look without compromising on freedom of movement.." ,
+        imgsrc:"mobile2.jpg",
+        price:800,
+        reviews:9,
+        stars:4.9,
+
+    },
+    {
+        id:  15,
+        Title:"Makeup 1",
+        category:"makeups",
+        description:'Gucci Jeans Pant suitable price | 8',
+        detail:"Made from 100% high-quality cotton denim, these pants are soft to the touch and durable enough for everyday wear. The fabric is pre-washed to provide  a comfortable, lived-in feel from day one Featuring a timeless cut that flatters all body types, our jeans offer a straight-leg silhouette with a mid-rise waist. This classic fit ensures a comfortable and stylish look without compromising on freedom of movement.." ,
+        imgsrc:"makeup1.jpg",
+        price:800,
+        reviews:9,
+        stars:4.9,
+
+    },
+    {
+        id:  16,
+        Title:"Makeup 2",
+        category:"makeups",
+        description:'Gucci Jeans Pant suitable price | 8',
+        detail:"Made from 100% high-quality cotton denim, these pants are soft to the touch and durable enough for everyday wear. The fabric is pre-washed to provide  a comfortable, lived-in feel from day one Featuring a timeless cut that flatters all body types, our jeans offer a straight-leg silhouette with a mid-rise waist. This classic fit ensures a comfortable and stylish look without compromising on freedom of movement.." ,
+        imgsrc:"makeup2.jpg",
+        price:800,
+        reviews:9,
+        stars:4.9,
+
+    },
+    {
+        id:  17,
+        Title:"Makeup 3",
+        category:"makeups",
+        description:'Gucci Jeans Pant suitable price | 8',
+        detail:"Made from 100% high-quality cotton denim, these pants are soft to the touch and durable enough for everyday wear. The fabric is pre-washed to provide  a comfortable, lived-in feel from day one Featuring a timeless cut that flatters all body types, our jeans offer a straight-leg silhouette with a mid-rise waist. This classic fit ensures a comfortable and stylish look without compromising on freedom of movement.." ,
+        imgsrc:"makeup3.jpg",
+        price:800,
+        reviews:9,
+        stars:4.9,
+
+    },
+    {
+        id:  18,
+        Title:"Laptop 1",
+        category:"laptops",
+        description:'Gucci Jeans Pant suitable price | 8',
+        detail:"Made from 100% high-quality cotton denim, these pants are soft to the touch and durable enough for everyday wear. The fabric is pre-washed to provide  a comfortable, lived-in feel from day one Featuring a timeless cut that flatters all body types, our jeans offer a straight-leg silhouette with a mid-rise waist. This classic fit ensures a comfortable and stylish look without compromising on freedom of movement.." ,
+        imgsrc:"laptop1.jpg",
+        price:780,
+        reviews:91,
+        stars:4.9,
+
+    },
+    {
+        id:  19,
+        Title:"Laptop 2",
+        category:"laptops",
+        description:'Gucci Jeans Pant suitable price | 8',
+        detail:"Made from 100% high-quality cotton denim, these pants are soft to the touch and durable enough for everyday wear. The fabric is pre-washed to provide  a comfortable, lived-in feel from day one Featuring a timeless cut that flatters all body types, our jeans offer a straight-leg silhouette with a mid-rise waist. This classic fit ensures a comfortable and stylish look without compromising on freedom of movement.." ,
+        imgsrc:"laptop2.jpg",
+        price:280,
+        reviews:18,
+        stars:4.9,
 
     },
 ]

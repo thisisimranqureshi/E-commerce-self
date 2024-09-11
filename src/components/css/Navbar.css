@@ -65,10 +65,9 @@ nav span b{
 
 #search-bar{
     width: 450px;
-    height: 45px;
-
+    height: 40px;
     position: relative;
-    right: 292px;
+    right: 207px;
 }
 #search-bar input{
     width: 80%;
@@ -122,7 +121,8 @@ nav span b{
     list-style: none;
     display: inline-block;
     font-weight: bold;
-    color: white;}
+    color: white;
+cursor: pointer;}
     
     #categories ul li a{
         text-decoration: none;

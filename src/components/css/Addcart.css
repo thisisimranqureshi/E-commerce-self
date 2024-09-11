@@ -1,0 +1,57 @@
+#addcart-main-div {
+    width:98vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Addcart-cart {
+    width: 80%; /* Adjust width as needed */
+    max-width: 1200px; /* Set a max-width for better layout */
+    border: 1px solid black;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#Addcart-cart h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.table-container {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-container thead {
+    background-color: #f4f4f4;
+}
+
+.table-container th, .table-container td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+}
+
+.table-container th {
+    background-color: #ddd;
+}
+
+.table-container td {
+    padding: 8px;
+}
+
+.delete-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 3px;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}

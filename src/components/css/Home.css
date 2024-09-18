@@ -7,21 +7,19 @@ a{
     height: 400px;
     position: relative;
     top:70px;
-
     background-size: contain;
     border: none;
-
-
     
 }
 #Home-main-image-div h2{
-
     position: absolute;
     bottom: 300px;
-    z-index: 1;
     left: 70px;
     color :white;
 }
+
+
+
 #Home-main-image-div button{
     position: relative;
     bottom: 120px;

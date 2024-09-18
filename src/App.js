@@ -8,6 +8,7 @@ import Navbar from './components/Navbar';
 import Searchdata from './components/Searchdata';
 import Singledata from './components/Singledata';
 import Addcart from './components/Addcart';
+import Footer from './components/Footer';
 import { items } from './components/data';
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
     return (
         <div>
             <BrowserRouter>
+               
                 <Navbar setData={setData} />
                 <Routes>
                     <Route path='/' element={<Home />} />
@@ -27,6 +29,7 @@ const App = () => {
                     <Route path='/Signup' element={<Signup />} />
                     <Route path='/Login' element={<Login />} />
                 </Routes>
+                <Footer/>
             </BrowserRouter>
         </div>
     );

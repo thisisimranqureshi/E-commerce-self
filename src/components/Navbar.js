@@ -15,7 +15,6 @@ const Navbar = ({ setData }) => {
             navigate('/Product'); // Redirect to the Product page
         } else {
             const filteration = items.filter((p) => p.category === category);
-            console.log(filteration);
             setData(filteration);
             navigate('/Product'); // Redirect to the Product page
         }
@@ -29,9 +28,9 @@ const Navbar = ({ setData }) => {
     if (!auth) {
         return null; 
     }
-    const handlesearch=()=>{
-        navigate(`/search/${searchitem}`);
-    }
+    const handlesearch = (event) => {
+          navigate(`/Searchdata/${searchitem}`); 
+      };
 
     return (
         <div>

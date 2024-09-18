@@ -1,5 +1,24 @@
-#search-data-main{
-    background-color: aqua;
-    height: 300px;
-    width: 400px;
-}
+.search-results {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .no-results {
+    padding: 50px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    margin-top: 200px;
+    margin-left: 320px;
+    max-width: 600px;
+  }
+  
+  .no-results h2 {
+    color: #ff6347; /* Example: a red color for the heading */
+    margin-bottom: 10px;
+  }
+  
+  .no-results p {
+    color: #555; /* Dark gray for the paragraph */
+  }
+  

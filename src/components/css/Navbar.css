@@ -123,6 +123,9 @@ nav span b{
     font-weight: bold;
     color: white;
 cursor: pointer;}
+#categories ul li:hover{
+    font-size: large;
+}
     
     #categories ul li a{
         text-decoration: none;

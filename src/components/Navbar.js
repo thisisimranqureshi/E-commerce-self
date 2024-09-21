@@ -16,13 +16,13 @@ const Navbar = ({ setData }) => {
         } else {
             const filteration = items.filter((p) => p.category === category);
             setData(filteration);
-            navigate('/Product'); // Redirect to the Product page
+            navigate('/Product'); 
         }
     };
 
     const handleLogout = () => {
-        localStorage.removeItem("local"); // Clear user data from local storage
-        navigate('/Login'); // Redirect to login page
+        localStorage.removeItem("local"); 
+        navigate('/Login'); 
     };
 
     if (!auth) {
@@ -31,6 +31,11 @@ const Navbar = ({ setData }) => {
     const handlesearch = (event) => {
           navigate(`/Searchdata/${searchitem}`); 
       };
+      const handlekeydown=(event)=>{
+        if(event.key=='Enter'){ 
+        handlesearch();}
+
+      }
 
     return (
         <div>
@@ -45,9 +50,11 @@ const Navbar = ({ setData }) => {
                 <div id="search-bar">
                     <input  onChange={(e)=>{
                         setSearchitem(e.target.value);
+                        
                     }}  
+                    onKeyDown={handlekeydown}
                     placeholder="Search" />
-                    <button onClick={handlesearch}>Search</button>
+                    <button onClick={handlesearch} >Search</button>
                 </div>
             </nav>
 

@@ -1,7 +1,7 @@
 export const items=[
     {
         id:  1,
-        Title:"shoes 1",
+        Title:"Shoes 1",
         category:"shoes",
         description:'Gucci Jeans Pant suitable price | 1',
         detail:"Made from 100% high-quality cotton denim, these pants are soft to the touch and durable enough for everyday wear. The fabric is pre-washed to provide  a comfortable, lived-in feel from day one Featuring a timeless cut that flatters all body types, our jeans offer a straight-leg silhouette with a mid-rise waist. This classic fit ensures a comfortable and stylish look without compromising on freedom of movement.." ,
@@ -146,7 +146,7 @@ export const items=[
     },
     {
         id:  13,
-        Title:"mobile 1",
+        Title:"Mobile 1",
         category:"mobiles",
         description:'Gucci Jeans Pant suitable price | 8',
         detail:"Made from 100% high-quality cotton denim, these pants are soft to the touch and durable enough for everyday wear. The fabric is pre-washed to provide  a comfortable, lived-in feel from day one Featuring a timeless cut that flatters all body types, our jeans offer a straight-leg silhouette with a mid-rise waist. This classic fit ensures a comfortable and stylish look without compromising on freedom of movement.." ,

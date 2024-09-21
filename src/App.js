@@ -17,10 +17,9 @@ const App = () => {
     return (
         <div>
             <BrowserRouter>
-               
                 <Navbar setData={setData} />
                 <Routes>
-                    <Route path='/' element={<Home />} />
+                    <Route path='/' element={<Signup />} />
                     <Route path='/Home' element={<Home />} />
                     <Route path='/Product' element={<Product items={data} />} />
                     <Route path='/Singledata/:id' element={<Singledata />} />

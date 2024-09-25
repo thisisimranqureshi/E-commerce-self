@@ -1,37 +1,53 @@
-a{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
     text-decoration: none;
     color: white;
 }
-#main-image{
-    width: 100vw;
+
+#home-main-div {
+    width: 100%;
+    height: auto; /* Change to auto for flexible height */
+}
+
+#Home-main-image-div {
+    width: 100%; /* Full width */
     height: 400px;
-    position: relative;
-    top:70px;
-    background-size: contain;
-    border: none;
-    
-}
-#Home-main-image-div h2{
-    position: absolute;
-    bottom: 300px;
-    left: 70px;
-    color :white;
+    background-color: #EEDDCD;
+    display: flex; /* Use flexbox */
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    padding: 20px; /* Add padding */
 }
 
+#Home-main-image-div h2 {
+    max-width: calc(100% - 20px); /* Prevent overflow */
+    margin-bottom: 20px; /* Add space below */
+    margin-left: 100px;
+}
 
-
-#Home-main-image-div button{
-    position: relative;
-    bottom: 120px;
-    left: 70px;
+#Home-main-image-div button {
     height: 40px;
-    width:150px;
-    border-radius: 10px;
-    background-color: rgb(226, 128, 128);
+    width: 150px;
+    background-color: #412e2b;
     color: white;
     font-weight: bold;
     border: none;
     font-size: 20px;
-
+    cursor: pointer; 
+    margin-left: 100px;
 }
 
+#home-p {
+    text-align: center; 
+    margin: 20px 0; 
+}
+
+#home-h3 {
+    text-align: center;
+    margin: 20px 0; 
+}

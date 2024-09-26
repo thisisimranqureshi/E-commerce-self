@@ -1,9 +1,10 @@
 const express = require('express');
 const cors = require('cors');
-require('./configuration/configure');
-const users = require('./configuration/users');
-const mailing = require('./mail');
+require('./configuration/configure'); // Ensure this is your database configuration
+const users = require('./configuration/users'); // Your user model
+const mailing = require('./mail'); // Your mailing module
 const app = express();
+
 app.use(express.json());
 app.use(cors());
 
@@ -17,8 +18,17 @@ const generateOTP = () => {
 // Signup route
 app.post('/signup', async (req, res) => {
     const { email } = req.body;
-    if (!email) {
-        return res.status(400).send({ error: 'Email is required' });
+
+    // Validate email
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!email || !emailRegex.test(email)) {
+        return res.status(400).send({ error: 'Valid email is required' });
+    }
+
+    // Check for existing user
+    const existingUser = await users.findOne({ email });
+    if (existingUser) {
+        return res.status(400).send({ error: 'Email is already registered' });
     }
 
     // Generate OTP and send it
@@ -48,17 +58,17 @@ app.post('/verify-otp', async (req, res) => {
 });
 
 // Login route
-app.post('/login', async (req, resp) => {
+app.post('/login', async (req, res) => {
     const { email, password } = req.body;
     if (email && password) {
         let user = await users.findOne({ email, password }).select("-password");
         if (user) {
-            resp.send(user);
+            res.send(user);
         } else {
-            resp.status(400).send({ result: "Invalid email or password" });
+            res.status(400).send({ result: "Invalid email or password" });
         }
     } else {
-        resp.status(400).send({ result: "Email and password are required" });
+        res.status(400).send({ result: "Email and password are required" });
     }
 });
 
@@ -81,6 +91,7 @@ app.post('/resend-otp', async (req, res) => {
     }
 });
 
-app.listen(3500, () => {
-    console.log('Server is running on port 3500');
+const PORT = 3500;
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
 });

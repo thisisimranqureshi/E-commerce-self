@@ -1,34 +1,32 @@
+
 #login-image-div{
     height: 100vh;
     width: 100vw;
-    background-image: url('../../images/background.jpg');
+    background-color: #EEDDCD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   #login-main-div{                                             /*login page*/
     border-radius: 20px;
-    margin-top: 50px;
     background-color: white;
-    display: inline-block;
     height: 400px;
     width: 300px;
-    margin-left: 450px;
     box-shadow: 
-    8px 8px 8px rgba(255, 255, 255, 0.3), /* Base shadow */
-    0 0 25px rgba(255, 255, 255, 0.6); /* Shiny effect */
+    0px 0px 4px black, /* Base shadow */
+    0 0 25px black; /* Shiny effect */
   
   }
-  #login-tag{      
-    border: #6a040f 5px solid;                                              /*login page*/
-    background-color: #6a040f;
+  #login-tag{                       
+    background-color:#412e2b;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     display: flex;
     justify-content: center;
-  }
-  #login-tag h1{                                                 /*login page*/
-    background-color: #6a040f;
     color: white;
   }
+  
   #login-email-input{                                                  /*login page*/
     background-color: white;
     display: flex;
@@ -41,7 +39,6 @@
     border: black solid 2px;
     margin-top: 40px;
     background-color: white;
-  
     font-size: 15px;}
   
   #login-password-input{                                             /*login page*/
@@ -65,7 +62,7 @@
     justify-content: center;
   }
   #login-button button{                                         /*login page*/
-    background-color:#6a040f ;
+    background-color:#412e2b ;
     margin-top: 40px;
     color:white;
     font-weight: 200;
@@ -73,7 +70,7 @@
     height: 30px;
     width: 150px;
     width: 100px;
-    border: solid #6a040f 3px;
+    border: none;
     border-radius: 20px;
   }
   #login-button button:hover{                                      /*login  page*/

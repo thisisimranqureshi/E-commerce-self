@@ -1,41 +1,42 @@
 import React, { useState } from "react";
-import { Link, NavLink, useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import '../components/css/Navbar.css';
 import { items } from "./data";
 
 const Navbar = ({ setData }) => {
-
-    const [searchitem,setSearchitem]=useState('');
+    const [searchitem, setSearchitem] = useState('');
     const navigate = useNavigate();
     const auth = localStorage.getItem("local");
 
     const handleCategory = (category) => {
         if (category === "All") {
-            setData(items); // Show all items
-            navigate('/Product'); // Redirect to the Product page
+            setData(items);
+            navigate('/Product');
         } else {
             const filteration = items.filter((p) => p.category === category);
             setData(filteration);
-            navigate('/Product'); 
+            navigate('/Product');
         }
     };
 
     const handleLogout = () => {
-        localStorage.removeItem("local"); 
-        navigate('/Login'); 
+        localStorage.removeItem("local");
+        navigate('/Login');
     };
 
     if (!auth) {
         return null; 
     }
-    const handlesearch = (event) => {
-          navigate(`/Searchdata/${searchitem}`); 
-      };
-      const handlekeydown=(event)=>{
-        if(event.key=='Enter'){ 
-        handlesearch();}
 
-      }
+    const handlesearch = () => {
+        navigate(`/Searchdata/${searchitem}`);
+    };
+
+    const handlekeydown = (event) => {
+        if (event.key === 'Enter') {
+            handlesearch();
+        }
+    };
 
     return (
         <div>
@@ -48,13 +49,12 @@ const Navbar = ({ setData }) => {
                     <li><NavLink onClick={handleLogout} to='/Login'>Logout</NavLink></li>
                 </ul>
                 <div id="search-bar">
-                    <input  onChange={(e)=>{
-                        setSearchitem(e.target.value);
-                        
-                    }}  
-                    onKeyDown={handlekeydown}
-                    placeholder="Search" />
-                    <button onClick={handlesearch} >Search</button>
+                    <input 
+                        onChange={(e) => setSearchitem(e.target.value)}
+                        onKeyDown={handlekeydown}
+                        placeholder="Search" 
+                    />
+                    <button onClick={handlesearch}>Search</button>
                 </div>
             </nav>
 

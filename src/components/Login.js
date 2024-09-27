@@ -44,6 +44,10 @@ const Login=()=>{
             const clicked=()=>{
                 fetchingfun();}
 
+                const handlekeydown=()=>{
+                    fetchingfun();
+                }
+
 
     return(
         <div id='login-image-div'>
@@ -51,7 +55,7 @@ const Login=()=>{
             <div id='login-tag'>  <h1>Login</h1>  </div>
             <div id='login-email-input'>< input  onChange={emailtext} placeholder='Enter Your Email'/></div>
             <div id='login-password-input'><input onChange={passwordtext} placeholder='Enter Your Password'/></div>
-            <div id='login-button'> <button onClick={clicked} > Login</button></div>
+            <div id='login-button'> <button onClick={clicked} onKeyDown={handlekeydown} > Login</button></div>
             <div id='login-signup'>  <p>Don't Have An Account?</p>
             <Link to='/Signup'>Signup</Link>    </div>
 
